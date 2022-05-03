@@ -24,3 +24,6 @@ select * from addressbook;
 UPDATE addressbook
 SET Last_Name = 'Naik',Address ='RLD', City= 'BLS',State ='Odisha',Zip = 120021,Phone = 1122334455,Email = 'patelamisha@gmail.com'
 WHERE First_Name = 'Amisha';
+------------UC-5----------------
+select * from addressbook;
+DELETE FROM addressbook WHERE First_Name = 'Amisha';
