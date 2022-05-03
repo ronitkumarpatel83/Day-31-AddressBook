@@ -19,3 +19,8 @@ VALUES ('Ronit','Patel','SNG','Sundergarh','Odisha',770001,7008427274,'ronitkuma
 ('Aman','Patel','JSD','Jharsuguda','Bihar',236549,2345678910,'amanpatel@gmail.com'),
 ('Durgesh','Dash','PatraPada','Bangalore','Karnatak',345612,3654789120,'durgeshdash@gmail.com'),
 ('Amisha','Patel','Bhor','Pune','Maharastra',456123,4567891230,'amisha@gmail.com');
+------------UC-4----------------
+select * from addressbook;
+UPDATE addressbook
+SET Last_Name = 'Naik',Address ='RLD', City= 'BLS',State ='Odisha',Zip = 120021,Phone = 1122334455,Email = 'patelamisha@gmail.com'
+WHERE First_Name = 'Amisha';
