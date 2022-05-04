@@ -45,3 +45,9 @@ UPDATE addressbook SET Type = 'Family' WHERE First_Name = 'Aman';
 UPDATE addressbook SET Type = 'Friend' WHERE First_Name = 'Dibya';
 UPDATE addressbook SET Type = 'Profession' WHERE First_Name = 'Durgesh';
 SELECT * FROM addressbook WHERE Type = 'Family';
+--------------UC-10----------------
+SELECT * FROM addressbook;
+SELECT COUNT(Type),Type from addressbook group by Type;
+SELECT COUNT(Type) as Number_of_Type from addressbook;
+
+
