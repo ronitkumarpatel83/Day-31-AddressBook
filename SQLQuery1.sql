@@ -27,3 +27,8 @@ WHERE First_Name = 'Amisha';
 ------------UC-5----------------
 select * from addressbook;
 DELETE FROM addressbook WHERE First_Name = 'Amisha';
+-------------UC-6----------------
+select * from addressbook;
+select * from addressbook WHERE City = 'Jharsuguda';
+select * from addressbook WHERE State = 'Meghalaya';
+
