@@ -38,3 +38,10 @@ SELECT COUNT(State) as Number_of_State FROM addressbook;
 --------------UC-8----------------
 SELECT * FROM addressbook ORDER BY City;
 SELECT * FROM addressbook ORDER BY State;
+--------------UC-9----------------
+SELECT * FROM addressbook;
+ALTER TABLE addressbook Add Type varchar(50);
+UPDATE addressbook SET Type = 'Family' WHERE First_Name = 'Aman';
+UPDATE addressbook SET Type = 'Friend' WHERE First_Name = 'Dibya';
+UPDATE addressbook SET Type = 'Profession' WHERE First_Name = 'Durgesh';
+SELECT * FROM addressbook WHERE Type = 'Family';
