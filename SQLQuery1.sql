@@ -35,4 +35,6 @@ select * from addressbook WHERE State = 'Meghalaya';
 select * from addressbook;
 SELECT COUNT(City) as Number_of_City FROM addressbook;
 SELECT COUNT(State) as Number_of_State FROM addressbook;
-
+--------------UC-8----------------
+SELECT * FROM addressbook ORDER BY City;
+SELECT * FROM addressbook ORDER BY State;
