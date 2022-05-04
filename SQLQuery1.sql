@@ -24,11 +24,15 @@ select * from addressbook;
 UPDATE addressbook
 SET Last_Name = 'Naik',Address ='RLD', City= 'BLS',State ='Odisha',Zip = 120021,Phone = 1122334455,Email = 'patelamisha@gmail.com'
 WHERE First_Name = 'Amisha';
-------------UC-5----------------
+------------UC-5-----------------
 select * from addressbook;
 DELETE FROM addressbook WHERE First_Name = 'Amisha';
 -------------UC-6----------------
 select * from addressbook;
 select * from addressbook WHERE City = 'Jharsuguda';
 select * from addressbook WHERE State = 'Meghalaya';
+-------------UC-7----------------
+select * from addressbook;
+SELECT COUNT(City) as Number_of_City FROM addressbook;
+SELECT COUNT(State) as Number_of_State FROM addressbook;
 
