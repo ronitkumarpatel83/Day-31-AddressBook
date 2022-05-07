@@ -54,4 +54,25 @@ INSERT INTO addressbook (First_Name,Last_Name,Address,City,State,Zip,Phone,Email
 VALUES ('Ashok','Patel','BLS','SNGH','Odisha',770091,1236547890,'ashokpatel@gmail.com','Family');
 INSERT INTO addressbook (First_Name,Last_Name,Address,City,State,Zip,Phone,Email,Type)
 VALUES ('Ashok','Patel','BLS','SNGH','Odisha',770091,1236547890,'ashokpatel@gmail.com','Friend');
+--------------UC-12----------------
 
+create table Contacttype( cont_id int primary key identity(1,1),
+Contacttype_Name varchar(255),
+Contacttype_id int FOREIGN KEY REFERENCES addressbook(Serial_Number));
+create table AddressDetails(
+Contact_ID int identity(1,1) primary key,
+FirstName varchar(100),
+SecondName varchar(100),
+Address varchar(250),
+City varchar(100),
+State varchar(100),
+zip BigInt,
+PhoneNumber BigInt,
+Email varchar(200),
+Contacttype_id int FOREIGN KEY REFERENCES addressbook(Serial_Number));
+
+create table person( person_id int primary key identity(1,1),
+person_name varchar(255),
+Contacttype_id int FOREIGN KEY REFERENCES addressbook(Serial_Number));
+
+select * from addressbook;
