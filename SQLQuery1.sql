@@ -47,7 +47,11 @@ UPDATE addressbook SET Type = 'Profession' WHERE First_Name = 'Durgesh';
 SELECT * FROM addressbook WHERE Type = 'Family';
 --------------UC-10----------------
 SELECT * FROM addressbook;
-SELECT COUNT(Type),Type from addressbook group by Type;
 SELECT COUNT(Type) as Number_of_Type from addressbook;
-
+--------------UC-11----------------
+SELECT * FROM addressbook;
+INSERT INTO addressbook (First_Name,Last_Name,Address,City,State,Zip,Phone,Email,Type)
+VALUES ('Ashok','Patel','BLS','SNGH','Odisha',770091,1236547890,'ashokpatel@gmail.com','Family');
+INSERT INTO addressbook (First_Name,Last_Name,Address,City,State,Zip,Phone,Email,Type)
+VALUES ('Ashok','Patel','BLS','SNGH','Odisha',770091,1236547890,'ashokpatel@gmail.com','Friend');
 
