@@ -76,3 +76,16 @@ person_name varchar(255),
 Contacttype_id int FOREIGN KEY REFERENCES addressbook(Serial_Number));
 
 select * from addressbook;
+----------------UC-13---------------
+select * from addressbook;
+-----------------------------------------------------
+select * from addressbook WHERE City = 'Jharsuguda';
+select * from addressbook WHERE State = 'Meghalaya'
+------------------------------------------------------
+SELECT COUNT(City) as Number_of_City FROM addressbook;
+SELECT COUNT(State) as Number_of_State FROM addressbook;
+--------------------------------------------------------
+SELECT * FROM addressbook ORDER BY City;
+SELECT * FROM addressbook ORDER BY State;
+------------------------------------------------------
+SELECT COUNT(Type) as Number_of_Type from addressbook;
